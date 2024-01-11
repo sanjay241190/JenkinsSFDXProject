@@ -43,7 +43,7 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
 		println 'start identifying delta'
 		
 	    // Identify changed files using Git
-                def changedFiles = sh (returnStdout: true, script: "git diff --name-only origin/${env.BRANCH_NAME}...HEAD").trim()
+                def changedFiles = sh(returnStdout: true, script: "git diff --name-only origin/${env.BRANCH_NAME}...HEAD").trim()
 	
 	///////paste
 	}
