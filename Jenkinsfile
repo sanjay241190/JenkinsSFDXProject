@@ -44,7 +44,8 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
 			if (isUnix()) {
 				rmsg = sh returnStdout: true, script: "sfdx force:mdapi:deploy -d manifest/. -u ${HUB_ORG}"
 			}else{
-			   rmsg = bat returnStdout: true, script: "sfdx force:mdapi:deploy -d force-app/. -u ${HUB_ORG}"
+			   //rmsg = bat returnStdout: true, script: "sfdx force:mdapi:deploy -d force-app/. -u ${HUB_ORG}"
+			   rmsg = bat returnStdout: true, script: "sf project deploy start  --source-dir force-app/. --target-org ${HUB_ORG}"
 			}
 			  
             printf rmsg
