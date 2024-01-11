@@ -17,7 +17,8 @@ node {
     println SFDC_HOST
     println CONNECTED_APP_CONSUMER_KEY
     // def toolbelt = tool 'toolbelt'
-
+    println 'install sfdx'	
+    npm install -g sfdx-cli
     stage('checkout source') {
         // when running in multi-branch job, one must issue this command
         checkout scm
