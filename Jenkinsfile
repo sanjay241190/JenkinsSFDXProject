@@ -62,7 +62,7 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
 		  
 	
 		// Deploy only changed files
-                if (!fileName.isEmpty()) {
+                if (!changedFiles.isEmpty()) {
                     if (isUnix()) {
                         rmsg = sh returnStdout: true, script: "sf project deploy start  --source-dir ${changedFiles} --target-org ${HUB_ORG}"
                     } else {
