@@ -5,7 +5,7 @@ node {
     def BUILD_NUMBER=env.BUILD_NUMBER
     def RUN_ARTIFACT_DIR="tests/${BUILD_NUMBER}"
     def SFDC_USERNAME
-
+    def from_commitId="310a22a0b5e82eed1e446838f34a4e5d79f3040a"
     def HUB_ORG=env.HUB_ORG_DH
     def SFDC_HOST = env.SFDC_HOST_DH
     def JWT_KEY_CRED_ID = env.JWT_CRED_ID_DH
@@ -56,7 +56,7 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
 			println rc
 	stage('Identify Delta'){
 	    // Identify changed files using Git
-                def changedFiles = bat returnStdout: true, script: "git diff --name-only origin/${env.BRANCH_NAME}...HEAD"    //.trim()
+                def changedFiles = bat returnStdout: true, script: "git diff --name-only ${from_commitId}...HEAD"    //.trim()
 		
 
                 println 'Changed Files start'
