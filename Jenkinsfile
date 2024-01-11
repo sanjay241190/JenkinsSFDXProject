@@ -57,19 +57,22 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
 	stage('Identify Delta'){
 	    // Identify changed files using Git
                 def changedFiles = bat(returnStdout: true, script: "git diff --name-only ${from_commitId}...HEAD").trim()
-		
-
+		                   
+                // Extract only file names using basename
+                    def changedFileNames = changedFiles.split('\n').collect {
+                        bat(returnStdout: true, script: "cmd /c echo %%~nxa").trim()
+                    }
                 println 'Changed Files start'
-		println changedFiles
+		println changedFileNames
 		println 'Changed Files end'
 	
 	
 		// Deploy only changed files
-                if (!changedFiles.isEmpty()) {
+                if (!changedFileNames.isEmpty()) {
                     if (isUnix()) {
-                        sh "sfdx force:source:deploy --sourcepath ${changedFiles}"
+                        sh "sfdx force:source:deploy --sourcepath ${changedFileNames}"
                     } else {
-                 	rmsg = bat returnStdout: true, script: "sf project deploy start  --sourcepath ${changedFiles} --target-org ${HUB_ORG}"
+                 	rmsg = bat returnStdout: true, script: "sf project deploy start  --sourcepath ${changedFileNames} --target-org ${HUB_ORG}"
                     }
                 } else {
                     echo "No changes detected. Skipping deployment."
