@@ -58,7 +58,9 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
 	    // Identify changed files using Git
                 def changedFiles = bat(returnStdout: true, script: "git diff --name-only ${from_commitId}...HEAD").trim()
 		                   
-                
+                println 'Changed Files Start'
+		println changedFiles
+		println 'Changed Files end'
 		  
 	
 		// Deploy only changed files
