@@ -69,19 +69,18 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
                         // Return the file name
                         fileName
                     }
-
-		println fileName
-                println 'Changed Files start'
-		println changedFileNames
+		
+		println 'Changed Files start'
+		println fileName	
 		println 'Changed Files end'
 	
 	
 		// Deploy only changed files
                 if (!changedFileNames.isEmpty()) {
                     if (isUnix()) {
-                        sh "sfdx force:source:deploy --sourcepath ${changedFileNames}"
+                        sh "sfdx force:source:deploy --sourcepath ${fileName}"
                     } else {
-                 	rmsg = bat returnStdout: true, script: "sf project deploy start  --sourcepath ${changedFileNames} --target-org ${HUB_ORG}"
+                 	rmsg = bat returnStdout: true, script: "sf project deploy start  --sourcepath ${fileName} --target-org ${HUB_ORG}"
                     }
                 } else {
                     echo "No changes detected. Skipping deployment."
