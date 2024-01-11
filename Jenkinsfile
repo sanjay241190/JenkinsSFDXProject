@@ -69,7 +69,7 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
                     if (isUnix()) {
                         sh "sfdx force:source:deploy --sourcepath ${changedFiles}"
                     } else {
-                 	rmsg = bat returnStdout: true, script: "sf project deploy start  --sourcepath ${changedFiles}"
+                 	rmsg = bat returnStdout: true, script: "sf project deploy start  --sourcepath ${changedFiles} --target-org ${HUB_ORG}"
                     }
                 } else {
                     echo "No changes detected. Skipping deployment."
