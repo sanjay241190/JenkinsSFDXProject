@@ -29,10 +29,7 @@ node {
 stage('checkout source') {
         // when running in multi-branch job, one must issue this command
         checkout scm	
-    }
-
-stage('Get Commit ID') {
-            steps {
+    
                 script {
                     // Retrieve the head commit ID
                     def commitId = bat(script: 'git rev-parse HEAD', returnStdout: true).trim()
@@ -40,7 +37,7 @@ stage('Get Commit ID') {
 
                     // Now you can use the 'commitId' variable in your further steps or actions
                     // For example, you might want to pass it to other scripts or use it in your build process.
-                }
+                
             }
         }
 
