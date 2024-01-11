@@ -72,7 +72,7 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
 		
 	
 		// Deploy only changed files
-                if (!changedFileNames.isEmpty()) {
+                if (!fileName.isEmpty()) {
                     if (isUnix()) {
                         sh "sfdx force:source:deploy --sourcepath ${fileName}"
                     } else {
@@ -82,15 +82,8 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
                     echo "No changes detected. Skipping deployment."
                 }
 	      
-		// need to pull out assigned username
-		//	if (isUnix()) {
-		//		rmsg = sh returnStdout: true, script: "sfdx force:mdapi:deploy -d manifest/. -u ${HUB_ORG}"
-		//	}else{
-			   //rmsg = bat returnStdout: true, script: "sf project deploy start  --source-dir force-app/. --target-org ${HUB_ORG}"
-		//	   rmsg = bat returnStdout: true, script: "sf project deploy start  --source-dir force-app/. --target-org ${HUB_ORG}"
-		//	}
 			  
-                  printf rmsg
+            printf rmsg
             println('Hello from a Job DSL script!')
             println(rmsg)
 	}
