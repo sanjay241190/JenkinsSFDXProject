@@ -11,6 +11,7 @@ node {
     def JWT_KEY_CRED_ID = env.JWT_CRED_ID_DH
     def CONNECTED_APP_CONSUMER_KEY=env.CONNECTED_APP_CONSUMER_KEY_DH
     def fileName = 'null'
+    def changedFileNames = 'null'
     env.BRANCH_NAME = "main"
     // Add this line in your Jenkins job script
     env.PATH = "C:\\Program Files\\sf\\bin;${env.PATH}"
@@ -60,7 +61,7 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
                 def changedFiles = bat(returnStdout: true, script: "git diff --name-only ${from_commitId}...HEAD").trim()
 		                   
                 // Extract only file names using basename
-                  def changedFileNames = changedFiles.split('\n').collect { filePath ->
+                       changedFileNames = changedFiles.split('\n').collect { filePath ->
                         // Extract file name using basename
                         fileName = filePath.tokenize('/').last()
                         
@@ -69,15 +70,16 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
 
                         // Return the file name
                         fileName
-		
+		echo "Changed File Names: ${changedFileNames.join(', ')}"
+                }
 		  }
 	
 		// Deploy only changed files
                 if (!fileName.isEmpty()) {
                     if (isUnix()) {
-                        sh "sfdx force:source:deploy --sourcepath ${fileName}"
+                        rmsg = sh returnStdout: true, script: "sf project deploy start  --sourcepath ${changedFileNames.join(', ') --target-org ${HUB_ORG}"
                     } else {
-                 	rmsg = bat returnStdout: true, script: "sf project deploy start  --sourcepath ${fileName} --target-org ${HUB_ORG}"
+                 	rmsg = bat returnStdout: true, script: "sf project deploy start  --sourcepath ${changedFileNames.join(', ') --target-org ${HUB_ORG}"
                     }
                 } else {
                     echo "No changes detected. Skipping deployment."
