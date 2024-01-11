@@ -16,5 +16,7 @@ node {
     println HUB_ORG
     println SFDC_HOST
     println CONNECTED_APP_CONSUMER_KEY
+
+    sh 'toolbelt-command --options'
     def toolbelt = tool 'toolbelt'
     
