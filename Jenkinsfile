@@ -37,8 +37,11 @@ stage('checkout source') {
                     headcommitId = bat(script: 'git rev-parse HEAD', returnStdout: true).trim()
                     println "Head Commit ID: ${headcommitId}"
 
-		    // Stash the head commit ID
-            	       stash includes: 'headcommitId', name: 'myStash'
+		    // Write the head commit ID to a temporary file
+                    writeFile file: 'headCommitId.txt', text: headCommitId
+
+		    // Stash the temporary file
+    		       stash includes: 'headCommitId.txt', name: 'myStash'
                   
             }
         }
