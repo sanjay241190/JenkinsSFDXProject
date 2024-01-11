@@ -38,7 +38,7 @@ stage('checkout source') {
                     println "Head Commit ID: ${headcommitId}"
 
 		    // Stash the head commit ID
-            	       stash includes: 'headCommitId', name: 'myStash'
+            	       stash includes: 'headcommitId', name: 'myStash'
                   
             }
         }
