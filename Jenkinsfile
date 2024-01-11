@@ -27,6 +27,17 @@ node {
     println CONNECTED_APP_CONSUMER_KEY
 
         //def toolbelt = tool 'toolbelt'
+	//Added in the second run
+	script {
+                    // Unstash the head commit ID
+                    unstash 'myStash'
+
+                    // Access the head commit ID
+                    from_commitId = readFile('headcommitId').trim()
+                    echo "Retrieved Head Commit ID: ${from_commitId}"
+
+                    
+                }
     
 stage('checkout source') {
         
