@@ -13,6 +13,8 @@ node {
     // Add this line in your Jenkins job script
     env.PATH = "C:\\Program Files\\sf\\bin;${env.PATH}"
 
+    bat "sfdx --version"
+
 
     println 'KEY IS' 
     println JWT_KEY_CRED_ID
