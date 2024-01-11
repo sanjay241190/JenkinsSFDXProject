@@ -68,7 +68,6 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
 
                         // Return the file name
                         fileName
-                    }
 		
 		
 	
@@ -95,6 +94,7 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
             println('Hello from a Job DSL script!')
             println(rmsg)
 	}
+                    }
 	
 	}
     }
