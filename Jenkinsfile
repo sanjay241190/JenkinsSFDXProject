@@ -10,8 +10,6 @@ node {
     def SFDC_HOST = env.SFDC_HOST_DH
     def JWT_KEY_CRED_ID = env.JWT_CRED_ID_DH
     def CONNECTED_APP_CONSUMER_KEY=env.CONNECTED_APP_CONSUMER_KEY_DH
-    def fileName = 'null'
-    def changedFileNames = 'null'
     env.BRANCH_NAME = "main"
     // Add this line in your Jenkins job script
     env.PATH = "C:\\Program Files\\sf\\bin;${env.PATH}"
@@ -61,7 +59,7 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
                 def changedFiles = bat(returnStdout: true, script: "git diff --name-only ${from_commitId}...HEAD").trim()
 		                   
                 
-		  }
+		  
 	
 		// Deploy only changed files
                 if (!fileName.isEmpty()) {
@@ -73,7 +71,7 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
                 } else {
                     echo "No changes detected. Skipping deployment."
                 }
-	      
+	}
 			  
             printf rmsg
             println('Hello from a Job DSL script!')
