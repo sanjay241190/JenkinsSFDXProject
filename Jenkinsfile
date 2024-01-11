@@ -62,8 +62,8 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
                 println 'Changed Files start'
 		println changedFiles
 		println 'Changed Files end'
-	}
-	stage('Deploy Delta'){
+	
+	
 		// Deploy only changed files
                 if (!changedFiles.isEmpty()) {
                     if (isUnix()) {
@@ -86,7 +86,7 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
                   printf rmsg
             println('Hello from a Job DSL script!')
             println(rmsg)
-        }
+	}
 	
 	}
     }
