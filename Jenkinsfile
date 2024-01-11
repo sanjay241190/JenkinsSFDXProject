@@ -66,7 +66,7 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
 		def forceAppPaths = lines.findAll { it.startsWith('force-app') }
 
 		// Join the filtered paths with a single space
-		def result = forceAppPaths.join(' ')
+		result = forceAppPaths.join(' ')
 
 		// Print the result
   		println 'Changed Files Start'
