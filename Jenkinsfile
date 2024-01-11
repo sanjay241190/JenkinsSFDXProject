@@ -46,12 +46,12 @@ node {
     }
       println 'start identifying delta'
   stage('Identify Delta') {
-            steps {
+            
                 script {
                     // Identify changed files using Git
                     def changedFiles = sh(returnStdout: true, script: "git diff --name-only origin/${SFDC_BRANCH}...HEAD").trim()
                     env.CHANGED_FILES = changedFiles
-                }
+                
             }
         }		
 		
