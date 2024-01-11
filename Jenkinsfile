@@ -10,6 +10,7 @@ node {
     def SFDC_HOST = env.SFDC_HOST_DH
     def JWT_KEY_CRED_ID = env.JWT_CRED_ID_DH
     def CONNECTED_APP_CONSUMER_KEY=env.CONNECTED_APP_CONSUMER_KEY_DH
+    def gitDiffOutput = """
     env.BRANCH_NAME = "main"
     // Add this line in your Jenkins job script
     env.PATH = "C:\\Program Files\\sf\\bin;${env.PATH}"
@@ -57,9 +58,19 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
 	stage('Identify Delta'){
 	    // Identify changed files using Git
                 def changedFiles = bat(returnStdout: true, script: "git diff --name-only ${from_commitId}...HEAD").trim()
-		                   
-                println 'Changed Files Start'
-		println changedFiles
+
+		// Split the Git diff output into lines
+			def lines = changedFiles.readLines()
+
+		// Filter paths that start with "force-app"
+		def forceAppPaths = lines.findAll { it.startsWith('force-app') }
+
+		// Join the filtered paths with a single space
+		def result = forceAppPaths.join(' ')
+
+		// Print the result
+  		println 'Changed Files Start'
+		println result
 		println 'Changed Files end'
 		  
 	
