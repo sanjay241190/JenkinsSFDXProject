@@ -70,7 +70,7 @@
             </criteriaItems>
             <criteriaItems>
                 <field>Account.SLA__c</field>
-                <operation>equals</operation>
+                <operation>notEqual</operation>
                 <value>Silver,Bronze</value>
             </criteriaItems>
             <criteriaItems>
