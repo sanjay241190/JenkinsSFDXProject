@@ -26,8 +26,15 @@ node {
     println SFDC_HOST
     println CONNECTED_APP_CONSUMER_KEY
 
-    
-    //def toolbelt = tool 'toolbelt'
+    script {
+                    // Unstash the head commit ID
+                    unstash 'myStash'
+
+                    // Access the head commit ID
+                    from_commitId = readFile('headCommitId').trim()
+                    println "Retrieved Head Commit ID: ${from_commitId}"
+    }
+	    //def toolbelt = tool 'toolbelt'
     
 stage('checkout source') {
         
