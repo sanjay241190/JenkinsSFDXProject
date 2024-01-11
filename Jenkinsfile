@@ -40,9 +40,10 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
             if (rc != 0) { error 'hub org authorization failed' }
 
 			println rc
+		println 'start identifying delta'
 	stage('Identify Delta'){
 	    // Identify changed files using Git
-                def changedFiles = sh(returnStdout: true, script: "git diff --name-only origin/${env.BRANCH_NAME}...HEAD").trim()
+                def changedFiles = sh (returnStdout: true, script: "git diff --name-only origin/${env.BRANCH_NAME}...HEAD").trim()
 	}
 	///////paste
 	}
