@@ -39,7 +39,7 @@ stage('checkout source') {
 
 		    if (headcommitId == null || headcommitId.length() == 0) {
         		error 'Failed to retrieve the head commit ID'
-    }
+    			}
 
 		    // Write the head commit ID to a temporary file
                     writeFile file: 'headcommitId.txt', text: headcommitId
