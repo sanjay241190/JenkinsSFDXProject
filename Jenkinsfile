@@ -30,7 +30,7 @@ stage('checkout source') {
         checkout scm
     }
 withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]) {
-        stage('Deploye Code') {
+        stage('Authenticate') {
             if (isUnix()) {
                 rc = sh returnStatus: true, script: "sfdx force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile ${jwt_key_file} --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
             }else{
@@ -39,18 +39,33 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
             if (rc != 0) { error 'hub org authorization failed' }
 
 			println rc
-			
-			// need to pull out assigned username
-			if (isUnix()) {
-				rmsg = sh returnStdout: true, script: "sfdx force:mdapi:deploy -d manifest/. -u ${HUB_ORG}"
-			}else{
+	stage('Identify Delta')
+	    // Identify changed files using Git
+                def changedFiles = sh(returnStdout: true, script: "git diff --name-only origin/${env.BRANCH_NAME}...HEAD").trim()
+
+	stage('Deploy Delta')
+		// Deploy only changed files
+                if (!changedFiles.isEmpty()) {
+                    if (isUnix()) {
+                        sh "sfdx force:source:deploy --sourcepath ${changedFiles}"
+                    } else {
+                        bat "sfdx force:source:deploy --sourcepath ${changedFiles}"
+                    }
+                } else {
+                    echo "No changes detected. Skipping deployment."
+                }
+	      
+		// need to pull out assigned username
+		//	if (isUnix()) {
+		//		rmsg = sh returnStdout: true, script: "sfdx force:mdapi:deploy -d manifest/. -u ${HUB_ORG}"
+		//	}else{
 			   //rmsg = bat returnStdout: true, script: "sf project deploy start  --source-dir force-app/. --target-org ${HUB_ORG}"
-			   rmsg = bat returnStdout: true, script: "sf project deploy start  --source-dir force-app/. --target-org ${HUB_ORG}"
-			}
+		//	   rmsg = bat returnStdout: true, script: "sf project deploy start  --source-dir force-app/. --target-org ${HUB_ORG}"
+		//	}
 			  
-            printf rmsg
-            println('Hello from a Job DSL script!')
-            println(rmsg)
+                //  printf rmsg
+            //println('Hello from a Job DSL script!')
+            //println(rmsg)
         }
     }
 }
