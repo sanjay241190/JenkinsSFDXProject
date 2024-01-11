@@ -11,6 +11,8 @@ node {
     def JWT_KEY_CRED_ID = env.JWT_CRED_ID_DH
     def CONNECTED_APP_CONSUMER_KEY=env.CONNECTED_APP_CONSUMER_KEY_DH
     def result = 'null'
+    def headCommitId
+
     env.BRANCH_NAME = "main"
     // Add this line in your Jenkins job script
     env.PATH = "C:\\Program Files\\sf\\bin;${env.PATH}"
@@ -28,17 +30,15 @@ node {
     //def toolbelt = tool 'toolbelt'
     
 stage('checkout source') {
-        // when running in multi-branch job, one must issue this command
-        checkout scm	
+        
+	 checkout scm	
     
                 script {
                     // Retrieve the head commit ID
-                    def commitId = bat(script: 'git rev-parse HEAD', returnStdout: true).trim()
-                    println "Head Commit ID: ${commitId}"
+                    headcommitId = bat(script: 'git rev-parse HEAD', returnStdout: true).trim()
+                    println "Head Commit ID: ${headcommitId}"
 
-                    // Now you can use the 'commitId' variable in your further steps or actions
-                    // For example, you might want to pass it to other scripts or use it in your build process.
-                
+                  
             }
         }
 
@@ -88,8 +88,10 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
 			  
             printf rmsg
             println('Hello from a Job DSL script!')
-            println(rmsg)                   
-	
-	}
+            println(rmsg)
+
+            // Save head commit ID for subsequent builds
+            currentBuild.description = "Head Commit ID: ${headCommitId}"
+        }
     }
 }
