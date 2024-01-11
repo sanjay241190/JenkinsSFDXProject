@@ -33,6 +33,20 @@ stage('checkout source') {
         
 	 checkout scm	
 	    //Added in the second run
+	script {
+			// List available stashes
+    			def stashes = stash list: true
+    			println "Available Stashes: ${stashes}"
+		
+                    // Unstash the head commit ID
+                    unstash 'myStash'
+
+                    // Access the head commit ID
+                    from_commitId = readFile('headcommitId').trim()
+                    echo "Retrieved Head Commit ID: ${from_commitId}"
+
+                    
+                }
 	        
     
                 script {
