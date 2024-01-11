@@ -49,7 +49,7 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
                     if (isUnix()) {
                         sh "sfdx force:source:deploy --sourcepath ${changedFiles}"
                     } else {
-                        bat "sfdx force:source:deploy --sourcepath ${changedFiles}"
+                 	rmsg = bat returnStdout: true, script: "sf project deploy start  --sourcepath ${changedFiles}"
                     }
                 } else {
                     echo "No changes detected. Skipping deployment."
@@ -63,9 +63,9 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
 		//	   rmsg = bat returnStdout: true, script: "sf project deploy start  --source-dir force-app/. --target-org ${HUB_ORG}"
 		//	}
 			  
-                //  printf rmsg
-            //println('Hello from a Job DSL script!')
-            //println(rmsg)
+                  printf rmsg
+            println('Hello from a Job DSL script!')
+            println(rmsg)
         }
     }
 }
