@@ -10,7 +10,7 @@ node {
     def SFDC_HOST = env.SFDC_HOST_DH
     def JWT_KEY_CRED_ID = env.JWT_CRED_ID_DH
     def CONNECTED_APP_CONSUMER_KEY=env.CONNECTED_APP_CONSUMER_KEY_DH
-    def gitDiffOutput = """
+    def result = 'null'
     env.BRANCH_NAME = "main"
     // Add this line in your Jenkins job script
     env.PATH = "C:\\Program Files\\sf\\bin;${env.PATH}"
@@ -60,7 +60,7 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
                 def changedFiles = bat(returnStdout: true, script: "git diff --name-only ${from_commitId}...HEAD").trim()
 
 		// Split the Git diff output into lines
-			def lines = changedFiles.readLines()
+		def lines = changedFiles.readLines()
 
 		// Filter paths that start with "force-app"
 		def forceAppPaths = lines.findAll { it.startsWith('force-app') }
@@ -77,9 +77,9 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
 		// Deploy only changed files
                 if (!changedFiles.isEmpty()) {
                     if (isUnix()) {
-                        rmsg = sh returnStdout: true, script: "sf project deploy start  --source-dir ${changedFiles} --target-org ${HUB_ORG}"
+                        rmsg = sh returnStdout: true, script: "sf project deploy start  --source-dir ${result} --target-org ${HUB_ORG}"
                     } else {
-                 	rmsg = bat returnStdout: true, script: "sf project deploy start  --source-dir ${changedFiles} --target-org ${HUB_ORG}"
+                 	rmsg = bat returnStdout: true, script: "sf project deploy start  --source-dir ${result} --target-org ${HUB_ORG}"
                     }
                 } else {
                     echo "No changes detected. Skipping deployment."
@@ -88,9 +88,7 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
 			  
             printf rmsg
             println('Hello from a Job DSL script!')
-            println(rmsg)
-	
-                    
+            println(rmsg)                   
 	
 	}
     }
