@@ -70,10 +70,7 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
                         fileName
                     }
 		
-		println 'Changed Files start'
-		println fileName	
-		println 'Changed Files end'
-	
+		
 	
 		// Deploy only changed files
                 if (!changedFileNames.isEmpty()) {
