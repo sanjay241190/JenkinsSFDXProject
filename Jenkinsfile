@@ -44,30 +44,7 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
 	    // Identify changed files using Git
                 def changedFiles = bat(returnStdout: true, script: "git diff --name-only origin/${env.BRANCH_NAME}...HEAD").trim()
 	}
-	stage('Deploy Delta'){
-		// Deploy only changed files
-                if (!changedFiles.isEmpty()) {
-                    if (isUnix()) {
-                        sh "sfdx force:source:deploy --sourcepath ${changedFiles}"
-                    } else {
-                 	rmsg = bat returnStdout: true, script: "sf project deploy start  --sourcepath ${changedFiles}"
-                    }
-                } else {
-                    echo "No changes detected. Skipping deployment."
-                }
-	      
-		// need to pull out assigned username
-		//	if (isUnix()) {
-		//		rmsg = sh returnStdout: true, script: "sfdx force:mdapi:deploy -d manifest/. -u ${HUB_ORG}"
-		//	}else{
-			   //rmsg = bat returnStdout: true, script: "sf project deploy start  --source-dir force-app/. --target-org ${HUB_ORG}"
-		//	   rmsg = bat returnStdout: true, script: "sf project deploy start  --source-dir force-app/. --target-org ${HUB_ORG}"
-		//	}
-			  
-                  printf rmsg
-            println('Hello from a Job DSL script!')
-            println(rmsg)
-        }
+	
 	}
     }
 }
