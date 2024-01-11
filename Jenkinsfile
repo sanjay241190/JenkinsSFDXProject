@@ -67,7 +67,7 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
 
 		println filenames
                 println 'Changed Files start'
-		println changedFileNames
+		println filenameWithoutExtension
 		println 'Changed Files end'
 	
 	
