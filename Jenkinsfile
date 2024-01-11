@@ -56,7 +56,7 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
 			println rc
 	stage('Identify Delta'){
 	    // Identify changed files using Git
-                def changedFiles = bat returnStdout: true, script: "git diff --name-only ${from_commitId}...HEAD"    //.trim()
+                def changedFiles = bat(returnStdout: true, script: "git diff --name-only ${from_commitId}...HEAD").trim()
 		
 
                 println 'Changed Files start'
