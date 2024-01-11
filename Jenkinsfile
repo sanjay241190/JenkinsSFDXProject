@@ -10,6 +10,7 @@ node {
     def SFDC_HOST = env.SFDC_HOST_DH
     def JWT_KEY_CRED_ID = env.JWT_CRED_ID_DH
     def CONNECTED_APP_CONSUMER_KEY=env.CONNECTED_APP_CONSUMER_KEY_DH
+    def fileName = 'null'
     env.BRANCH_NAME = "main"
     // Add this line in your Jenkins job script
     env.PATH = "C:\\Program Files\\sf\\bin;${env.PATH}"
@@ -61,7 +62,7 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
                 // Extract only file names using basename
                   def changedFileNames = changedFiles.split('\n').collect { filePath ->
                         // Extract file name using basename
-                        def fileName = filePath.tokenize('/').last()
+                        fileName = filePath.tokenize('/').last()
                         
                         // Print the file name (optional)
                         echo "File Name: ${fileName}"
@@ -69,7 +70,7 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
                         // Return the file name
                         fileName
 		
-		
+		  }
 	
 		// Deploy only changed files
                 if (!fileName.isEmpty()) {
@@ -87,7 +88,7 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
             println('Hello from a Job DSL script!')
             println(rmsg)
 	}
-                    }
+                    
 	
 	}
     }
