@@ -59,8 +59,8 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
                 def changedFiles = bat(returnStdout: true, script: "git diff --name-only ${from_commitId}...HEAD").trim()
 		                   
                 // Extract only file names using basename
-                  def filenames = changedFiles.collect { changedFiles ->
-    			def filename = changedFiles.substring(changedFiles.lastIndexOf('/') + 1)
+                  def filenames = changedFiles.collect { path ->
+    			def filename = path.substring(changedFiles.lastIndexOf('/') + 1)
     			def filenameWithoutExtension = filename.substring(0, filename.lastIndexOf('.'))
     			return filenameWithoutExtension
 		}
