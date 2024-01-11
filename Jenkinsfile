@@ -60,7 +60,7 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
 		                   
                 // Extract only file names using basename
                     def changedFileNames = changedFiles.split('\n').collect {
-                        bat(returnStdout: true, script: "cmd /c echo %%~nxa").trim()
+                       // bat(returnStdout: true, script: "cmd /c echo %%~nxa").trim()
                     }
                 println 'Changed Files start'
 		println changedFileNames
