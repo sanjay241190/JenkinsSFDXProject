@@ -27,7 +27,7 @@ node {
 
     
     //def toolbelt = tool 'toolbelt'
-stages{  
+  
   stage('checkout source') {
         // when running in multi-branch job, one must issue this command
         checkout scm
@@ -59,7 +59,7 @@ stages{
                 def changedFiles = sh(returnStdout: true, script: "git diff --name-only main...HEAD").trim()
 	
 	///////paste
-	}
+	
     }
 }
 
