@@ -60,26 +60,15 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
 	    // Identify changed files using Git
                 def changedFiles = bat(returnStdout: true, script: "git diff --name-only ${from_commitId}...HEAD").trim()
 		                   
-                // Extract only file names using basename
-                       changedFileNames = changedFiles.split('\n').collect { filePath ->
-                        // Extract file name using basename
-                        fileName = filePath.tokenize('/').last()
-                        
-                        // Print the file name (optional)
-                        echo "File Name: ${fileName}"
-
-                        // Return the file name
-                        fileName
-		echo "Changed File Names: ${changedFileNames.join(', ')}"
-                }
+                
 		  }
 	
 		// Deploy only changed files
                 if (!fileName.isEmpty()) {
                     if (isUnix()) {
-                        rmsg = sh returnStdout: true, script: "sf project deploy start  --sourcepath ${changedFileNames.join(', ')} --target-org ${HUB_ORG}"
+                        rmsg = sh returnStdout: true, script: "sf project deploy start  --source-dir ${changedFiles} --target-org ${HUB_ORG}"
                     } else {
-                 	rmsg = bat returnStdout: true, script: "sf project deploy start  --sourcepath ${changedFileNames.join(', ')} --target-org ${HUB_ORG}"
+                 	rmsg = bat returnStdout: true, script: "sf project deploy start  --source-dir ${changedFiles} --target-org ${HUB_ORG}"
                     }
                 } else {
                     echo "No changes detected. Skipping deployment."
