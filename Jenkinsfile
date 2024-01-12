@@ -32,6 +32,17 @@ node {
 stage('checkout source') {
         
 	 checkout scm	
+            println 'Previous Commit ID'
+	    println from_commitId
+	 // Copy the commit ID file from the artifacts of the previous build
+		copyArtifacts filter: 'headcommit_id.txt', fingerprintArtifacts: true, projectName: 'TestPipeline'
+
+	// Read the commit ID from the file
+		from_commitId = readFile('commit_id.txt').trim()
+
+	println 'Updated Commit ID'
+	println from_commitId
+	
 	    
         }
 
