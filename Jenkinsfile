@@ -91,10 +91,12 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
 		writeFile file: 'headcommit_id.txt', text: headcommitId
 
 		// Commit the changes and push to the branch
-                bat script: 'git add headcommit_id.txt'
-                bat script: 'git commit -m "Save head commit ID"'
-                bat script: 'git push origin refs/remotes/origin/main'
+	script {
+                bat 'git add headcommit_id.txt'
+                bat 'git commit -m "Save head commit ID"'
+                bat 'git push origin main'
 		//bat script: 'git push origin HEAD:main'
+	}
         }
     }
 }
