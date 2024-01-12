@@ -88,8 +88,12 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
                 println "Head Commit ID: ${headcommitId}"
 
 
-            // Save head commit ID for subsequent builds
-            //currentBuild.description = "Head Commit ID: ${headcommitId}"
+                Save head commit ID for subsequent builds
+                currentBuild.description = "Head Commit ID: ${headcommitId}"
+		
+		// Save the headcommit ID to a file
+		writeFile file: 'headcommit_id.txt', text: currentBuild.description
+		archiveArtifacts 'headcommit_id.txt'
         }
     }
 }
