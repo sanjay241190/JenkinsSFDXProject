@@ -94,12 +94,12 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
 	script {
 		bat 'git fetch --all'
 		bat 'git log --oneline'
-		
-                bat 'git add headcommit_id.txt'
-                bat 'git commit -m "Save head commit ID"'
-		def currentBranch = bat(script: 'git rev-parse --abbrev-ref HEAD', returnStdout: true).trim()
+		bat 'git symbolic-ref --short HEAD'
+      //          bat 'git add headcommit_id.txt'
+      //          bat 'git commit -m "Save head commit ID"'
+	//	def currentBranch = bat(script: 'git rev-parse --abbrev-ref HEAD', returnStdout: true).trim()
                 //bat 'git push main'
-		bat script: 'git push origin HEAD:${currentBranch}'
+	//	bat script: 'git push origin HEAD:${currentBranch}'
 	}
         }
     }
