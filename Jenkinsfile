@@ -32,18 +32,7 @@ node {
 stage('checkout source') {
         
 	 checkout scm	
-            println 'Previous Commit ID'
-	    println from_commitId
-	 // Copy the commit ID file from the artifacts of the previous build
-		copyArtifacts filter: 'headcommit_id.txt', fingerprintArtifacts: true, projectName: 'TestPipeline'
-
-	// Read the commit ID from the file
-		from_commitId = readFile('headcommit_id.txt').trim()
-
-	println 'Updated Commit ID'
-	println from_commitId
-	
-	    
+            	    
         }
 
 
@@ -97,14 +86,14 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
 	    // Retrieve the head commit ID
                 headcommitId = bat(script: 'git rev-parse HEAD', returnStdout: true).trim()
                 println "Head Commit ID: ${headcommitId}"
-
-
-                //Save head commit ID for subsequent builds
-                currentBuild.description = "Head Commit ID: ${headcommitId}"
-		
+                
 		// Save the headcommit ID to a file
-		writeFile file: 'headcommit_id.txt', text: currentBuild.description
-		archiveArtifacts 'headcommit_id.txt'
+		writeFile file: 'headcommit_id.txt', text: headcommitId
+
+		// Commit the changes and push to the branch
+                bat "git add headcommit_id.txt"
+                bat "git commit -m 'Save head commit ID'"
+                bat "git push origin main"
         }
     }
 }
