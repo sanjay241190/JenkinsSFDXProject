@@ -38,7 +38,7 @@ stage('checkout source') {
 		copyArtifacts filter: 'headcommit_id.txt', fingerprintArtifacts: true, projectName: 'TestPipeline'
 
 	// Read the commit ID from the file
-		from_commitId = readFile('commit_id.txt').trim()
+		from_commitId = readFile('headcommit_id.txt').trim()
 
 	println 'Updated Commit ID'
 	println from_commitId
