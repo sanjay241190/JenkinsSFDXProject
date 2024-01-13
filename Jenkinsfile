@@ -95,18 +95,8 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
 		// Save the headcommit ID to a file
 		writeFile file: 'headcommit_id.txt', text: headcommitId
 
-		// Commit the changes and push to the branch
-	script {
-		bat 'git fetch --all'
-	//	bat 'git log --oneline'
-	//	bat 'git rev-parse --abbrev-ref HEAD 2>NUL || git describe --tags --exact-match HEAD 2>NUL || git log -n 1 --pretty='%h''
-
-      //          bat 'git add headcommit_id.txt'
-      //          bat 'git commit -m "Save head commit ID"'
-	//	def currentBranch = bat(script: 'git rev-parse --abbrev-ref HEAD', returnStdout: true).trim()
-                //bat 'git push main'
-	//	bat script: 'git push origin HEAD:${currentBranch}'
-	}
+		
+	
         }
     }
 }
