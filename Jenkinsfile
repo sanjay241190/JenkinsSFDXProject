@@ -36,12 +36,12 @@ stage('checkout source') {
         }
 
 script {
-             // Retrieve the head commit ID
-	        headcommitId = bat(script: 'git rev-parse HEAD', returnStdout: true).trim()
-                println "Full Head Commit ID: ${headcommitId}"
+             // Retrieve the head commit ID from file
+	        retrieved_commitId = readFile 'headcommit_id.txt'.trim()
+                println "Full Head Commit ID: ${retrieved_commitId}"
 
-	        // Extract content after the word "HEAD"
-		def afterHead = headcommitId =~ /HEAD(.*)/
+	       // Extract content after the word "HEAD"
+		def afterHead = retrieved_commitId =~ /HEAD(.*)/
 		from_commitId = afterHead[0][1].trim()
 		println "Content after HEAD: ${from_commitId}"
 	
