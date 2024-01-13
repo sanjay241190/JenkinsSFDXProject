@@ -41,7 +41,7 @@ script {
                 println "Full Head Commit ID: ${retrieved_commitId}"
 
 	       // Extract content after the word "HEAD"
-		  from_commitId = line.substring(line.indexOf("HEAD") + 5).trim()
+		  from_commitId = retrieved_commitId.substring(line.indexOf("HEAD") + 5).trim()
 
 	        if (from_commitId) {
    			 if (from_commitId.size() > 0) {
