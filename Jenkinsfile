@@ -94,7 +94,7 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
 	script {
 		bat 'git fetch --all'
 	//	bat 'git log --oneline'
-		bat 'git rev-parse --abbrev-ref HEAD 2>NUL || git describe --tags --exact-match HEAD 2>NUL || git log -n 1 --pretty='%h''
+	//	bat 'git rev-parse --abbrev-ref HEAD 2>NUL || git describe --tags --exact-match HEAD 2>NUL || git log -n 1 --pretty='%h''
 
       //          bat 'git add headcommit_id.txt'
       //          bat 'git commit -m "Save head commit ID"'
