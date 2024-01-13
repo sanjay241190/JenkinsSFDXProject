@@ -39,8 +39,8 @@ script {
              from_commitId = readFile 'headcommit_id.txt'.trim()
             println "Commit ID retrieved from file: ${from_commitId}"
              
-             from_commitId= "d8ea467836faf63e2f616c6061d6a7fb7b1caed3"
-	println "Commit ID manually updated: ${from_commitId}"
+        //     from_commitId= "d8ea467836faf63e2f616c6061d6a7fb7b1caed3"
+	//println "Commit ID manually updated: ${from_commitId}"
 	
         }
 
@@ -57,7 +57,9 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
 			println rc
 	stage('Identify Delta'){
 	    // Identify changed files using Git
+		println "Commit ID retrieved from file: ${from_commitId}"
                 def changedFiles = bat(returnStdout: true, script: "git diff --name-only ${from_commitId}...HEAD").trim()
+		
                 //def changedFiles = bat(returnStdout: true, script: "git diff --name-only ${from_commitId} HEAD").trim()
 
 		// Split the Git diff output into lines
