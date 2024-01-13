@@ -36,7 +36,7 @@ stage('checkout source') {
         }
 
 script {
-             from_commitId = readFile 'commit_id.txt'.trim()
+             from_commitId = readFile 'headcommit_id.txt'.trim()
             println "Commit ID retrieved from file: ${from_commitId}"
             // Now you can use 'commitId' in your build process
         }
