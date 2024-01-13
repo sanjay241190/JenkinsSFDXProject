@@ -35,7 +35,11 @@ stage('checkout source') {
             	    
         }
 
-
+script {
+             from_commitId = readFile 'commit_id.txt'.trim()
+            println "Commit ID retrieved from file: ${from_commitId}"
+            // Now you can use 'commitId' in your build process
+        }
 
 	
 withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]) {
