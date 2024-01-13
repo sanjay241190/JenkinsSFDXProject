@@ -42,7 +42,7 @@ script {
 
 	        // Extract content after the word "HEAD"
 		def afterHead = headcommitId =~ /HEAD(.*)/
-		def from_commitId = afterHead[0][1].trim()
+		from_commitId = afterHead[0][1].trim()
 		println "Content after HEAD: ${from_commitId}"
 	
 	println "Commit ID retrieved from file: ${from_commitId}"
