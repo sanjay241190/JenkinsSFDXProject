@@ -2,7 +2,7 @@
 <RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Learn_Lead_Guitar</fullName>
     <active>true</active>
-    <description>Please select this if you want to learn Lead Guitar</description>
+    <description>Please select this if you want to learn Lead Guitar:</description>
     <label>Learn Lead Guitar</label>
     <picklistValues>
         <picklist>AccountSource</picklist>
