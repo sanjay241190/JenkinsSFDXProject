@@ -41,17 +41,17 @@ script {
                 println "Full Head Commit ID: ${retrieved_commitId}"
 
 	       // Extract content after the word "HEAD"
-		def afterHead = retrieved_commitId =~ /HEAD(.*)/
+		def from_commitId = line.substring(line.indexOf("HEAD") + 5).trim()
 
-	        if (afterHead) {
-   			 if (afterHead.size() > 0) {
-       				 from_commitId = afterHead[0][2].trim()
+	        if (from_commitId) {
+   			 if (from_commitId.size() > 0) {
+       				// from_commitId = afterHead[0][1].trim()
        				 println "Content after HEAD: ${from_commitId}"
   		  } 		else {
-        		println "Error: Regular expression did not capture content after HEAD."
+        		println "Error: Not found"
    		 }
 		} else {
-    println "Error: Regular expression did not match the expected pattern."
+    println "Error: No such pattern."
 }
 
 
