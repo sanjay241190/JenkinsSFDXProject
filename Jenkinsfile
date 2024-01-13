@@ -45,7 +45,7 @@ script {
 
 	        if (afterHead) {
    			 if (afterHead.size() > 0) {
-       				 from_commitId = afterHead[0][1].trim()
+       				 from_commitId = afterHead[1][2].trim()
        				 println "Content after HEAD: ${from_commitId}"
   		  } 		else {
         		println "Error: Regular expression did not capture content after HEAD."
@@ -56,8 +56,8 @@ script {
 
 
 	
-		from_commitId = afterHead[0][1].trim()
-		println "Content after HEAD: ${from_commitId}"
+	//	from_commitId = afterHead[0][1].trim()
+	//	println "Content after HEAD: ${from_commitId}"
 	
 	println "Commit ID retrieved from file: ${from_commitId}"
              
