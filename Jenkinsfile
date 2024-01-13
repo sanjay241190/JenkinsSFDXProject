@@ -11,7 +11,7 @@ node {
     def JWT_KEY_CRED_ID = env.JWT_CRED_ID_DH
     def CONNECTED_APP_CONSUMER_KEY=env.CONNECTED_APP_CONSUMER_KEY_DH
     def result = 'null'
-    def headCommitId
+    def headcommitId
 
     env.BRANCH_NAME = "main"
     // Add this line in your Jenkins job script
@@ -36,9 +36,16 @@ stage('checkout source') {
         }
 
 script {
-             retrieve_commitId = readFile 'headcommit_id.txt'.trim()
-	     from_commitId = retrieve_commitId.trim()
-            println "Commit ID retrieved from file: ${from_commitId}"
+             // Retrieve the head commit ID
+	        headcommitId = bat(script: 'git rev-parse HEAD', returnStdout: true).trim()
+                println "Full Head Commit ID: ${headcommitId}"
+
+	        // Extract content after the word "HEAD"
+		def afterHead = headcommitId =~ /HEAD(.*)/
+		def from_commitId = afterHead[0][1].trim()
+		println "Content after HEAD: ${from_commitId}"
+	
+	println "Commit ID retrieved from file: ${from_commitId}"
              
         //     from_commitId= "d8ea467836faf63e2f616c6061d6a7fb7b1caed3"
 	//println "Commit ID manually updated: ${from_commitId}"
@@ -58,14 +65,8 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
 			println rc
 	stage('Identify Delta'){
 	    // Identify changed files using Git
-		println "Commit ID retrieved from file: ${from_commitId}"
-                println "start"
-		def gitDiffCommand = "git diff --name-only ${from_commitId}...HEAD"
-		println "end: ${gitDiffCommand}"
-                def changedFiles = bat(returnStdout: true, script: "git diff --name-only ${from_commitId}...HEAD").trim()
+             def changedFiles = bat(returnStdout: true, script: "git diff --name-only ${from_commitId}...HEAD").trim()
 		
-                //def changedFiles = bat(returnStdout: true, script: "git diff --name-only ${from_commitId} HEAD").trim()
-
 		// Split the Git diff output into lines
 		def lines = changedFiles.readLines()
 
@@ -100,7 +101,7 @@ withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]
 	    // Retrieve the head commit ID
                 headcommitId = bat(script: 'git rev-parse HEAD', returnStdout: true).trim()
                 println "Head Commit ID: ${headcommitId}"
-                
+		                
 		// Save the headcommit ID to a file
 		writeFile file: 'headcommit_id.txt', text: headcommitId
 
