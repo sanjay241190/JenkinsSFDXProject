@@ -36,7 +36,8 @@ stage('checkout source') {
         }
 
 script {
-             from_commitId = readFile 'headcommit_id.txt'.trim()
+             retrieve_commitId = readFile 'headcommit_id.txt'.trim()
+	     from_commitId = ${from_commitId}.trim()
             println "Commit ID retrieved from file: ${from_commitId}"
              
         //     from_commitId= "d8ea467836faf63e2f616c6061d6a7fb7b1caed3"
