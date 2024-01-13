@@ -1,0 +1,1767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>ICC_RestrictionOnWhatId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ICC_RestrictionOnWhatId</shortDescription>
+        <value>Please relate a task to a Case or a Non-Patient/General Participant Account</value>
+    </labels>
+    <labels>
+        <fullName>ICC_RestrictionOnWhatIdIRC</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ICC_RestrictionOnWhatIdIRC</shortDescription>
+        <value>Please relate a task to a Case or a Non-Patient/General Participant Account or an Infusion Reminder.</value>
+    </labels>
+    <labels>
+        <fullName>MandatoryInteractionWithField</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MandatoryInteractionWithField</shortDescription>
+        <value>Interaction With is required when completing the task</value>
+    </labels>
+    <labels>
+        <fullName>My_Custom_Label1</fullName>
+        <categories>My Category</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>My Custom Label1</shortDescription>
+        <value>New
+Modified</value>
+    </labels>
+    <labels>
+        <fullName>My_Custom_Label2</fullName>
+        <categories>My Category2</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>My Custom Label2</shortDescription>
+        <value>Hot
+Cold</value>
+    </labels>
+    <labels>
+        <fullName>My_Custom_Label_Test</fullName>
+        <categories>My Category Test</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>My Custom Label Test</shortDescription>
+        <value>Test
+Fail</value>
+    </labels>
+    <labels>
+        <fullName>iCC_AEPTC_Keywords</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AEPTC Keywords</shortDescription>
+        <value>ABNORMAL,BMT,BREASTFEED,BREASTFEEDING,BREAST-FEED,BREAST-FEEDING,BRUIS,BRUISE,BRUISED,BRUISING,DECEASED,DIARRHEA,DIED,DIZZ,DIZZY,DIZZINESS,FATIGUE,FLU,HEADACHE,HOSPITALIZED,HOSPITALIZATION,INFECTION,NAUSE,NAUSEOUS,NAUSEA,NAUSEATED,NOT FEELING WELL,PAIN,PAINFUL,PASSED AWAY,PREGNANT,PREGNANCY,RASH,REACTION,SICK,SURGERY,TRANSPLANT</value>
+    </labels>
+    <labels>
+        <fullName>iCC_AE_PTC_Doc_Delete</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_AE_PTC_Doc_Delete</shortDescription>
+        <value>You are not allowed to delete this document. Please contact your System Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_AccChangeErrMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_AccChangeErrMsg</shortDescription>
+        <value>Account should be of the Case populated in Related To.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Accepted</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC Accepted</shortDescription>
+        <value>Accepted</value>
+    </labels>
+    <labels>
+        <fullName>iCC_AccountTeam_Batch_Size</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC AccountTeam Batch Size</shortDescription>
+        <value>200</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Account_Notes_Blank_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC Account Notes Blank Error</shortDescription>
+        <value>Please update Notes field to save the record.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Account_Status_Inactive</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Account_Status_Inactive</shortDescription>
+        <value>This Account has an open Program Case, please close all program cases in order to inactivate this account. If you believe this error is incorrect, please contact your System Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_ActiveCommercialGoodErrorMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>replace {!*!} with merge field name</shortDescription>
+        <value>Patient {!patientName!} is currently Active on a Free Goods Coverage and cannot be added to the Commercial Order</value>
+    </labels>
+    <labels>
+        <fullName>iCC_ActivePsbsErrorMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please select an Active PSBS Record to proceed</shortDescription>
+        <value>Please select an Active PSBS Record to proceed</value>
+    </labels>
+    <labels>
+        <fullName>iCC_ActiveSuccess</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_ActiveSuccess</shortDescription>
+        <value>Activation Successful</value>
+    </labels>
+    <labels>
+        <fullName>iCC_AddRemNtAllowed_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_AddRemNtAllowed_Error</shortDescription>
+        <value>You are not allowed to Add/Remove Patient(s) on orders.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Add_DCR_In_Progress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC Add DCR In Progress</shortDescription>
+        <value>This record is in the process of being mastered by RCM, changes cannot be performed until the record has been mastered.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_AdjustmentRecTypeName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Adjustment_Order</shortDescription>
+        <value>iCC_Adjustment_Order</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Adjustment_Order_Invalid_Status</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Adjustment Order Invalid Status</shortDescription>
+        <value>You can update the Order Status to Invoiced only if the current Status is Approved.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Applicant</fullName>
+        <categories>Object</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Applicant</shortDescription>
+        <value>PatientConnect__PC_Applicant__c</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Approval_PBM_ccEmail</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Approval_PBM_ccEmail</shortDescription>
+        <value>mohammed.khaleel@sanofi.com</value>
+    </labels>
+    <labels>
+        <fullName>iCC_AssocRErrMsgNonAdm</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_AssocRErrMsgNonAdm</shortDescription>
+        <value>Only a System/IT Administrator should be able to create or update Care Team Associations for this Role. Please reach out to your System Administrator for any changes.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_AssocRoleBySysAdm</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_AssocRoleBySysAdm</shortDescription>
+        <value>ABM,Care Coordinator,CM Manager,CoRe,CoRe Manager,PAM,PAM Manager,PBM,PBM Manager,PEL,PEL Manager,Regional Director,Reimbursement Specialist,TEM,TEM Manager</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Atlantis_Enrollment_Validation1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Atlantis_Enrollment_Validation1</shortDescription>
+        <value>Enrollment Date, First Line Treatment, Time Zone and at least one of the Receive Phone Calls OR Receive Emails OR Receive Reminder SMS OR Receive Intervention SMS must be populated prior to enrolling the patient</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Atlantis_Enrollment_Validation2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Atlantis_Enrollment_Validation2</shortDescription>
+        <value>Please indicate the Reminder SMS Time Primary of the reminder SMS</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Atlantis_Enrollment_Validation3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Atlantis_Enrollment_Validation3</shortDescription>
+        <value>Please ensure the Patient has a valid Mobile phone number</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Atlantis_Enrollment_Validation4</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Atlantis_Enrollment_Validation4</shortDescription>
+        <value>Please ensure the Patient has a valid email address on file</value>
+    </labels>
+    <labels>
+        <fullName>iCC_BA_Validation1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_BA_Validation1</shortDescription>
+        <value>Please complete the following fields to update the Status to</value>
+    </labels>
+    <labels>
+        <fullName>iCC_BarrierCreationErrMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Barrier without Free good coverage</shortDescription>
+        <value>Barriers cannot be created for On Treatment patients without Active Free Goods coverage</value>
+    </labels>
+    <labels>
+        <fullName>iCC_ByPassFulFillReqRecCreatn</fullName>
+        <categories>Enter - true or false -&gt; This label is to used to bypass fulfillment record creation during dataload.</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_ByPassFulFillReqRecCreatn</shortDescription>
+        <value>false</value>
+    </labels>
+    <labels>
+        <fullName>iCC_CABLIVI_Patient_Solutions</fullName>
+        <categories>Engagement Program</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC CABLIVI Patient Solutions</shortDescription>
+        <value>Cablivi Patient Solutionss</value>
+    </labels>
+    <labels>
+        <fullName>iCC_CC_Email_Address_for_Credit_Check_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CC Email Address for Credit Check Email</shortDescription>
+        <value>prdavis@deloitte.com</value>
+    </labels>
+    <labels>
+        <fullName>iCC_ConfiguredCaseProgramRecordTypeTemplate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC ConfiguredCaseProgramRecordTypeTemplate</shortDescription>
+        <value>Error occurred while fetching record type Id for Case record type - &apos;&apos;{0}&apos;&apos;</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Confirm</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Confirm</shortDescription>
+        <value>Confirm</value>
+    </labels>
+    <labels>
+        <fullName>iCC_ConsentCon_FilterOptions</fullName>
+        <categories>Consented Contacts</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_ConsentCon_FilterOptions</shortDescription>
+        <value>Patient;General Participant</value>
+    </labels>
+    <labels>
+        <fullName>iCC_ConsentCon_NoProgram</fullName>
+        <categories>Consented Contacts</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_ConsentCon_NoProgram</shortDescription>
+        <value>Consented Contacts Processor: Program ID not found</value>
+    </labels>
+    <labels>
+        <fullName>iCC_ConsentCon_NoneError</fullName>
+        <categories>Consented Contacts</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_ConsentCon_NoneError</shortDescription>
+        <value>&apos;Role&apos; and &apos;To Relationship Type&apos; are required. Please select any value.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_ConsentCon_Results</fullName>
+        <categories>Consented Contacts</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_ConsentCon_Results</shortDescription>
+        <value>Selected Consented Contact</value>
+    </labels>
+    <labels>
+        <fullName>iCC_ConsentCon_RoleError</fullName>
+        <categories>Consented Contacts</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_ConsentCon_RoleError</shortDescription>
+        <value>Only one &apos;Primary Caregiver&apos; can exist. Please select the Role as &apos;Consented Contact&apos; for others</value>
+    </labels>
+    <labels>
+        <fullName>iCC_ConsentCon_Search</fullName>
+        <categories>Consented Contacts</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_ConsentCon_Search</shortDescription>
+        <value>Search Existing</value>
+    </labels>
+    <labels>
+        <fullName>iCC_ConsentCon_SearchString</fullName>
+        <categories>Consented Contacts</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_ConsentCon_SearchString</shortDescription>
+        <value>Search Existing Consented Contact</value>
+    </labels>
+    <labels>
+        <fullName>iCC_ConsentFV_Val</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_ConsentFV_Val</shortDescription>
+        <value>Please select an active &apos;Consent Form Version&apos; related to the engagement program</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Consent_Type_Required</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Consent_Type_Required</shortDescription>
+        <value>Please enter &quot;Consent Type&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Convert_to_Patient</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Convert to Patient</shortDescription>
+        <value>Convert to Patient</value>
+    </labels>
+    <labels>
+        <fullName>iCC_CopayActConsents</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_CopayActConsents</shortDescription>
+        <value>iCC_FA_Consent__c,iCC_HIPAA_Consent__c</value>
+    </labels>
+    <labels>
+        <fullName>iCC_CopayActErrConsent</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_CopayActErrConsent</shortDescription>
+        <value>Please ensure Patient has a Primary Address, Case Manager assigned to their Program Case, and the necessary consents are Active (e.g. FA, HIPAA)</value>
+    </labels>
+    <labels>
+        <fullName>iCC_CopayActErrCoverage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_CopayActErrCoverage</shortDescription>
+        <value>Patient is already enrolled in Copay for this product, if attempting to change the enrollment type, please closed this case as created in error and navigate to existing Active Copay Coverage to Switch</value>
+    </labels>
+    <labels>
+        <fullName>iCC_CopayActErrPhone</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_CopayActErrPhone</shortDescription>
+        <value>on Patient should have 10 digits only</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Create_Caregiver_General_Participant</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Create Caregiver / General Participant</shortDescription>
+        <value>Create Caregiver / Enroll General Participant</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Credit_check_was_executed_document_not_OK</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Credit check was executed document not OK</shortDescription>
+        <value>Credit check was executed, document not OK</value>
+    </labels>
+    <labels>
+        <fullName>iCC_DEAFieldsValidation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_DEAFieldsValidation</shortDescription>
+        <value>The DEA # or the DEA Expiration Date is invalid. Do you want to continue?</value>
+    </labels>
+    <labels>
+        <fullName>iCC_DP_AssocRole_ErrorMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC DP AssocRole ErrorMsg</shortDescription>
+        <value>An Active ‘Diagnosing Physician&apos; already exists</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Date_Overlap_Error_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Date Overlap Error Message</shortDescription>
+        <value>This Treatment Summary record overlaps with another record, please update the date(s) accordingly</value>
+    </labels>
+    <labels>
+        <fullName>iCC_DaysForBdayForPSPBatch</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_DaysForBdayForPSPBatch</shortDescription>
+        <value>30</value>
+    </labels>
+    <labels>
+        <fullName>iCC_DaysForEndDateForPSPBatch</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_DaysForEndDateForPSPBatch</shortDescription>
+        <value>90</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Declined</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC Declined</shortDescription>
+        <value>Declined</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Declined_Message_1</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC Declined Message 1</shortDescription>
+        <value>You have selected</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Declined_Message_2</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Declined_Message_2</shortDescription>
+        <value>as the Patient Response. You won&apos;t be able to create a General Participant unless the person provides marketing consent. 
+ 
+Please click Previous to navigate to the previous page and change the Patient Response or click &apos;X&apos; to exit this wizard.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Default_Country</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC Default Country</shortDescription>
+        <value>United States</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Delete_Task_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Delete_Task_Error</shortDescription>
+        <value>Sorry !!, You cant delete the record</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Disclaimer_Validation</fullName>
+        <categories>Program Coverage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC Disclaimer Validation</shortDescription>
+        <value>Disclaimer is required in order to enroll.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_DocCatFortask</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_DocCatFortask</shortDescription>
+        <value>Enrollment Form;Prescription;IAP Enrollment Form</value>
+    </labels>
+    <labels>
+        <fullName>iCC_DocCatgObjects</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_DocCatgObjects</shortDescription>
+        <value>Case,Order,Account</value>
+    </labels>
+    <labels>
+        <fullName>iCC_DocNameNoScpl</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Document Name cannot contain any of the characters</shortDescription>
+        <value>Document Name cannot contain any of the following characters: / \ * ? : “ &lt; &gt; |</value>
+    </labels>
+    <labels>
+        <fullName>iCC_DocNameNoStartSpcl</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Document Name cannot start with a special character</shortDescription>
+        <value>Document Name cannot start with a special character</value>
+    </labels>
+    <labels>
+        <fullName>iCC_DocNameSuccess</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Document Name updated successfully</shortDescription>
+        <value>Document Name updated successfully</value>
+    </labels>
+    <labels>
+        <fullName>iCC_DocumentCategoryErrMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please select a Document Category</shortDescription>
+        <value>Please select a Document Category</value>
+    </labels>
+    <labels>
+        <fullName>iCC_ENJAYMO</fullName>
+        <categories>Engagement Program</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC ENJAYMO</shortDescription>
+        <value>Enjaymo Patient Solutions</value>
+    </labels>
+    <labels>
+        <fullName>iCC_EP_AssocRole_ErrorMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC EP AssocRole ErrorMsg</shortDescription>
+        <value>An Active ‘Evaluating Physician&apos; already exists</value>
+    </labels>
+    <labels>
+        <fullName>iCC_EditTempStaticURL</fullName>
+        <categories>eLetter</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_EditTempStaticURL</shortDescription>
+        <value>&amp;ofn=EditedTemplate&amp;SC0=1&amp;SC1=SalesforceFile&amp;FP0=1&amp;DS7=1&amp;DefaultPDF=1&amp;OCNR=2&amp;LiveEditVisible=1&amp;LiveEditEnable=1&amp;qmode=SalesforceFile&amp;tokenserviceurl=test.salesforce.com</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Edit_Task_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Edit_Task_Error</shortDescription>
+        <value>This record is locked for editing. If you need to edit it, please contact your administrator</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Email_Sent_Successfully</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email Sent Successfully</shortDescription>
+        <value>Email Sent Successfully.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Email_could_not_be_dispatched</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email could not be dispatched</shortDescription>
+        <value>The email could not be dispatched, please contact the Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Emergency_Order_Reason_Description</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Emergency Order Reason Description</shortDescription>
+        <value>EMERGENCY ORDER</value>
+    </labels>
+    <labels>
+        <fullName>iCC_EndDateSmall_Val</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_EndDateSmall_Val</shortDescription>
+        <value>End Date should not be older than Start Date.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Engagement_Program</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Engagement_Program</shortDescription>
+        <value>Engagement Program</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Engagement_Program_Name</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC Engagement Program Name</shortDescription>
+        <value>RBD General Disease State;RD General Disease State</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Engagement_Program_RBG</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC Engagement Program RBG</shortDescription>
+        <value>RBG</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Engagement_prog</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Engagement program for Order document</shortDescription>
+        <value>RD General Disease State</value>
+    </labels>
+    <labels>
+        <fullName>iCC_EnglishLang</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_EnglishLang</shortDescription>
+        <value>English</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Enroll_Unnamed_Patient</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Enroll_Unnamed_Patient</shortDescription>
+        <value>Enroll Unnamed Patient</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Enroll_to_New_EP</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Enroll to New EP</shortDescription>
+        <value>Enroll Patient to New EP</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Enrollment_Program_Case_Summary_Header_Document</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Enrollment_Program Case Summary Header Document</shortDescription>
+        <value>Enrollment/Program Case Already Exists for This Document</value>
+    </labels>
+    <labels>
+        <fullName>iCC_ErrMsgTaskWithFamilyConsent</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_ErrMsgTaskWithFamilyConsent</shortDescription>
+        <value>Family Tree Consent is required in order to Complete the Family Tree.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_ExProductStillOpenErrMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The selected Product has an Open Program Case. Please use existing Case.</shortDescription>
+        <value>The selected Product has an Open Program Case. Please use existing Case.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_ExpiryDate_Validation</fullName>
+        <categories>Program Coverage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_ExpiryDate_Validation</shortDescription>
+        <value>Expires On is required in order to enroll and should not be more than 1 year after.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Field_Error_Member_Mobile</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC Field Error Member Mobile</shortDescription>
+        <value>Enter valid Member Services Phone</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Field_Error_PBM_Phone</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC Field Error PBM Phone</shortDescription>
+        <value>Enter valid PBM Phone</value>
+    </labels>
+    <labels>
+        <fullName>iCC_FileExtension</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_FileExtension</shortDescription>
+        <value>pdf, tif, tiff</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Fulfillment_Request_Created</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Fulfillment_Request_Created</shortDescription>
+        <value>FulFillment Request Created Successfully.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Fulfillment_Request_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Fulfillment_Request_Error</shortDescription>
+        <value>Please populate the missing information listed below before creating this Fulfillment Request:</value>
+    </labels>
+    <labels>
+        <fullName>iCC_General_Participant_Record_Type</fullName>
+        <categories>Account Record Type</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_General_Participant_Record_Type</shortDescription>
+        <value>iCC_General_Participant</value>
+    </labels>
+    <labels>
+        <fullName>iCC_HCP_Not_Recommending</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_HCP_Not_Recommending</shortDescription>
+        <value>HCP Not Recommending-Advanced Disease Progression,HCP Not Recommending-Age Related,Medical-Bone Marrow Transplant,Test(CND)-Diagnosis In-Process,HCP Not Recommending-Having Regular Assessments,Medical-Hospital / Surgery / Other Health,Test(DNT)-Metabolizer Status Testing In-Process,HCP Not Recommending-Needs MD Assessment,HCP Not Recommending-Not Pursuing Appeal,HCP Not Recommending-Perceived Lack of Efficacy,Medical-Pregnancy / Lactation,HCP Not Recommending-Undesired Side Effects,Alternate Tx-Went on Competitor Product,Alternate Tx-Went on Competitor Trial,</value>
+    </labels>
+    <labels>
+        <fullName>iCC_InactiveFreeGoodErrorMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>for merge field combine with {!*!}</shortDescription>
+        <value>Patient {!patientName!} does not have Active Free Goods Coverage. Please reach out to the Case Manager to create the Free Goods Coverage</value>
+    </labels>
+    <labels>
+        <fullName>iCC_InfusionDateErrMsgOnRecord</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Infusion Pill Start Data Error Message on Order Product Record</shortDescription>
+        <value>Infusion/Pill Start Date cannot be same for multiple order products of the same patient for an Order.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_InfusionDateOrderWizardErrMessage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Infusion Date error message from Order creation wizard</shortDescription>
+        <value>You have entered the same Infusion/Pill Start Date for different Order Products of the same Patient. Please update the Date or remove the Dose.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Label_Order_Information</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Order Information</shortDescription>
+        <value>Order Information</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Label_Order_Prod_Information</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Order Product Information</shortDescription>
+        <value>Order Product Information</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Label_Upload_Docs</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Upload Documents</shortDescription>
+        <value>Upload Documents</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Mailing_Address_Validation_Error1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Mailing_Address_Validation_Error1</shortDescription>
+        <value>Please mark any of the existing addresses as Active Mailing Address before deselecting the Mailing Address checkbox.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Mailing_Address_Validation_Error2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Mailing_Address_Validation_Error2</shortDescription>
+        <value>Only one address can be checked as Mailing Address</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Mailing_Address_Validation_Error3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Mailing_Address_Validation_Error3</shortDescription>
+        <value>At least one address must be checked as Mailing Address</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Mailing_Address_Validation_FR</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Mailing_Address_Validation_FR</shortDescription>
+        <value>Active Mailing address for the patient</value>
+    </labels>
+    <labels>
+        <fullName>iCC_MultipleDispenseError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MultipleDispenseError</shortDescription>
+        <value>More than one dispense exists for this Program Case/Infusion Date/Order ID combination. Please correct the data or reach out to your PAM Manager for assistance.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_MyALPROLIX</fullName>
+        <categories>Engagement Program</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC MyALPROLIX</shortDescription>
+        <value>MyALPROLIX™</value>
+    </labels>
+    <labels>
+        <fullName>iCC_MyELOCTATE</fullName>
+        <categories>Engagement Program</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC MyELOCTATE</shortDescription>
+        <value>MyELOCTATE™</value>
+    </labels>
+    <labels>
+        <fullName>iCC_NamespaceTemplate</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC NamespaceTemplate</shortDescription>
+        <value>of namespace &apos;&apos;{0}&apos;&apos;</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Negative_Qty_Order_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Negative Qty Order Error</shortDescription>
+        <value>Negative Quantities cannot be used on Rare Disease Sales Order. Please use an adjustment order instead.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_New_Consented_Contact</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_New_Consented_Contact</shortDescription>
+        <value>New Consented Contact</value>
+    </labels>
+    <labels>
+        <fullName>iCC_New_Engagement_Program</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_New_Engagement_Program</shortDescription>
+        <value>Add Patient to New Engagement Program</value>
+    </labels>
+    <labels>
+        <fullName>iCC_New_Unnamed_Patient_Info</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_New_Unnamed_Patient_Info</shortDescription>
+        <value>New Unnamed Patient Information</value>
+    </labels>
+    <labels>
+        <fullName>iCC_NoPSBS_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_NoPSBS_Error</shortDescription>
+        <value>No PSBS with this SCA as Ship To. Please associate PSBS with SCA.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_NotProvidedLabel</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_NotProvidedLabel</shortDescription>
+        <value>Not Provided</value>
+    </labels>
+    <labels>
+        <fullName>iCC_OrdValErrActiveFaPSP</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_OrdValErrActiveFaPSP</shortDescription>
+        <value>Please ensure there is an active FA Consent on the Patient’s program in order to submit a Free Goods Order.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_OrdValErrActiveHIPAApsp</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_OrdValErrActiveHIPAApsp</shortDescription>
+        <value>Please ensure the Patient is in Active Status and that there are active HIPAA Authorization and PS Consent records associate to their program case.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_OrdValErrAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_OrdValErrAddress</shortDescription>
+        <value>Please ensure that an address is associated to the order and that it’s not missing any of the following information: Address 1, City, State, Zip.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_OrdValErrDaysSupply</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_OrdValErrDaysSupply</shortDescription>
+        <value>Days Supply is required in order to submit a Dose Order.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_OrdValErrDoseOrd</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_OrdValErrDoseOrd</shortDescription>
+        <value>Please ensure the Supply Order is associated to a Dose Order.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_OrdValErrOrdItmQuan</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_OrdValErrOrdItmQuan</shortDescription>
+        <value>You can only order 1 Sharps Container per supply order. Please update the Qty to 1 in order to save.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_OrdValErrPreferDelivery</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_OrdValErrPreferDelivery</shortDescription>
+        <value>Please designate Ship To Name and Preferred Delivery Date to submission.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_OrdValErrPrescription</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_OrdValErrPrescription</shortDescription>
+        <value>Ensure there is a Prescription associated to this Order and that the following fields on Rx are populated: Document, Patient Weight (KG).</value>
+    </labels>
+    <labels>
+        <fullName>iCC_OrdValErrPrgCoverage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_OrdValErrPrgCoverage</shortDescription>
+        <value>Ensure there is an active Program Coverage with the appropriate coverage type associated to this order prior to submission.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_OrdValErrStatus</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_OrdValErrStatus</shortDescription>
+        <value>The status of the order can no longer be updated.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_OrdValErrStatusCanReq</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_OrdValErrStatusCanReq</shortDescription>
+        <value>The status of the order can only be updated to ‘Cancel Requested’.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_OrdValErrSupplyItemSupOrd</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_OrdValErrSupplyItemSupOrd</shortDescription>
+        <value>Supply line items can only be added to Supply Orders.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_OrdValErrSupplyLItem</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_OrdValErrSupplyLItem</shortDescription>
+        <value>Please add a Supply line item prior to submission.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_OrderListPriceNoMatchMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_OrderListPriceNoMatchMsg</shortDescription>
+        <value>You cannot update the Price book on the SCA. Please clone the SCA and update the Price book, if required.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_OrderNotSentToErpErrorMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Order was not sent to SAP. Please try again.</shortDescription>
+        <value>Order was not sent to SAP. Please try again.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_OrderPriceSuccessMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pricing updated Successfully</shortDescription>
+        <value>Pricing updated Successfully</value>
+    </labels>
+    <labels>
+        <fullName>iCC_OrderProductDeletionError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Order Product Deletion Error</shortDescription>
+        <value>You cannot delete Order Products. Please use the Add/Remove Patient(s) button to remove Order Products.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_OrderQty_PositiveNegative</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Order Qty Positive Negative</shortDescription>
+        <value>Please ensure that, for a given order product, Qty A &amp; B are not Negative AND Positive. They should both be negative or zero, or positive or zero.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_OrderSendErpSoftError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>An Error was returned. Please check Message Text for details.</shortDescription>
+        <value>An Error was returned. Please check Message Text for details.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_OrderSentToErpErrorMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Order is already sent to ERP</shortDescription>
+        <value>Order is already sent to ERP</value>
+    </labels>
+    <labels>
+        <fullName>iCC_OrderSentToErpSuccess</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Order has been successfully sent to ERP</shortDescription>
+        <value>Order has been successfully sent to ERP</value>
+    </labels>
+    <labels>
+        <fullName>iCC_OrderSimulateSoftError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>An Error was returned. Please check Simulated Order Message Text for details.</shortDescription>
+        <value>An Error was returned. Please check Simulated Order Message Text for details.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_OrderSimulationErrorMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error Message for Order simulation</shortDescription>
+        <value>Order was not simulated. Please try again.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_OrderStartDateErrorMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Order Start Date is in future. Do you want to continue?</shortDescription>
+        <value>Order Start Date is in future. Do you want to continue?</value>
+    </labels>
+    <labels>
+        <fullName>iCC_OrderStatusErrorMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_OrderStatusErrorMsg</shortDescription>
+        <value>Order status should be Approved to Simulate Order</value>
+    </labels>
+    <labels>
+        <fullName>iCC_OrderStatusToErpErrorMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Order status should be Simulated to send to ERP</shortDescription>
+        <value>Order status should be Simulated to send to ERP</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Order_Status</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Order_Status</shortDescription>
+        <value>Submitted, Sent to Vendor, Received, Pending</value>
+    </labels>
+    <labels>
+        <fullName>iCC_PC_AssocRole_ErrorMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC PC AssocRole ErrorMsg</shortDescription>
+        <value>An Active ‘Primary Caregiver&apos; already exists, Please select the Role as &apos;Consented Contact’ or inactivate the existing &apos;Primary Caregiver’ to be able to document this as an active ‘Primary Caregiver’</value>
+    </labels>
+    <labels>
+        <fullName>iCC_PCovReasonFieldLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_PCovReasonFieldLabel</shortDescription>
+        <value>Program Coverage Outcome Reasons</value>
+    </labels>
+    <labels>
+        <fullName>iCC_PHolderReason</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_PHolderReason</shortDescription>
+        <value>Select a Reason</value>
+    </labels>
+    <labels>
+        <fullName>iCC_PSP_Validation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_PSP_Validation</shortDescription>
+        <value>The selected Service is not applicable for the Engagement Program on the case.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_PatAdd_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_PatAdd_Error</shortDescription>
+        <value>You cannot Add/Remove Patient(s) once order has been sent to ERP/Invoiced</value>
+    </labels>
+    <labels>
+        <fullName>iCC_PatientAdjustmentRecTypeName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Patient_Adjustment</shortDescription>
+        <value>iCC_Patient_Adjustment</value>
+    </labels>
+    <labels>
+        <fullName>iCC_PatientEmailRequiredErrMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_PatientEmailRequiredErrMsg</shortDescription>
+        <value>Patient Email is required in order to send the Consent</value>
+    </labels>
+    <labels>
+        <fullName>iCC_PatientInfo_Address_Reference</fullName>
+        <categories>Enrollment Wizard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC PatientInfo Address Reference</shortDescription>
+        <value>Reference Address from Pre-Enroll Search or Online Enrollment Form</value>
+    </labels>
+    <labels>
+        <fullName>iCC_PatientResp_Val</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_PatientResp_Val</shortDescription>
+        <value>Please enter the ‘Patient Response Date’ before saving the record.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Patient_Not_Pursuing</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Patient_Not_Pursuing</shortDescription>
+        <value>Medical-Bone Marrow Transplant,Patient(DNT)-Does not want Tx - Age Related,Patient(DNT)-Does not want Tx - Financial Burden,Patient(DNT)-Does not want Tx - Infusion Burden,Patient(DNT)-Does not want Tx - International Will Return,Patient(DNT)-Does not want Tx - Life Challenges,Patient(DNT)-Does not want Tx - Not Sick Enough - No Regular Assessments,Patient(DNT)-Does not want Tx - Not Sick Enough - Regular Assessments,Patient(DNT)-Does not want Tx - Perceived Lack of Efficacy,Patient(DNT)-Does not want Tx - Undesired Side Effects,Patient(DNT)-Epidemic / Natural Disaster,Medical-Hospital / Surgery / Other Health,Test(CND)-Not Pursuing Testing,Patient(CND)-Not Responding to PSS,Patient(DNT)-Not Responding to PSS,Medical-Pregnancy / Lactation,Patient(DNT)-Does not want Tx - Undecided or Waiting,Alternate Tx-Went on Competitor Product,Alternate Tx-Went on Competitor Trial,</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Patient_Not_Pursuing2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Patient_Not_Pursuing2</shortDescription>
+        <value>,</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Patient_Record_Type</fullName>
+        <categories>Account Record Type</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Patient_Record_Type</shortDescription>
+        <value>ICC_Patient</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Patient_Req_Fields_Error</fullName>
+        <categories>Program Coverage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Patient Req Fields Error</shortDescription>
+        <value>Please ensure the associated Patient has a First Name, Gender, Date of Birth, Phone, and a Primary Address with Address 1, City, State, Zip.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Picklist_None</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC Picklist None</shortDescription>
+        <value>None</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Pre_EnrollmentFlow</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Pre_EnrollmentFlow</shortDescription>
+        <value>iCC_PreEnrollment_Flow</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Pre_Enrollment_Applicant_Notification</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Pre_Enrollment_Applicant_Notification</shortDescription>
+        <value>You are about to redirect to Enrollment Case to Continue with Enrollment Process</value>
+    </labels>
+    <labels>
+        <fullName>iCC_PriceBookMatchErrMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_PriceBookMatchErrMsg</shortDescription>
+        <value>The Pricing on the Order’s SCA does not match the List Price on the Price book. Please update using the Update Pricing button.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_PriceErpNoMatchErrorMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pricing in ERP does not match pricing in iCC, Do you want to continue?</shortDescription>
+        <value>Pricing in ERP does not match pricing in iCC, Do you want to continue?</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Primary_Address_Inactive_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Primary Address Inactive Error</shortDescription>
+        <value>Please ensure that Patient has a Primary Address on file prior to documenting this type of Consent</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Primary_Address_Validation_Error</fullName>
+        <categories>Address</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Primary_Address_Validation_Error</shortDescription>
+        <value>Please mark any of the existing address as Primary before deselecting the Primary address</value>
+    </labels>
+    <labels>
+        <fullName>iCC_ProductSwitchAddLabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product Switch or Add Label</shortDescription>
+        <value>Product Switch or Add</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Program_Case_Closure</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC Program Case Closure</shortDescription>
+        <value>You cannot close the program case if any of the related service cases is open</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Program_Coverage_Date_Overlap_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Program_Coverage_Date_Overlap_Error</shortDescription>
+        <value>An existing Primary, Secondary, and/or Tertiary Pharmacy Program Coverage record already exists. Please inactivate and update the End Date on the existing record in order to create a new Active Pharmacy Program Coverage record.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Program_Coverage_Date_Overlapping</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC Program Coverage Date Overlapping</shortDescription>
+        <value>This Free Goods Coverage record overlaps with another Active coverage record, please update the date(s) accordingly</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Program_Coverage_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Program_Coverage_Error</shortDescription>
+        <value>Please populate the missing information listed below before updating Program Coverage outcome to</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Program_Coverage_Type_Validation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC Program Coverage Type Validation</shortDescription>
+        <value>The selected Coverage Type is not available with the associated Engagement Program</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Program_MedicalCoverage_Date_Overlap_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Program_MedicalCoverage_Date_Overlap_Error</shortDescription>
+        <value>An existing Primary, Secondary, and/or Tertiary Medical Program Coverage record already exists. Please inactivate and update the End Date on the existing record in order to create a new Active Medical Program Coverage record.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_PsbsStringNoMatchErrorMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PSBS string in ERP does not match string in iCC, Do you want to continue?</shortDescription>
+        <value>PSBS string in ERP does not match string in iCC, Do you want to continue?</value>
+    </labels>
+    <labels>
+        <fullName>iCC_RDCopayActErrCoverage</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RD copay error message</shortDescription>
+        <value>Please ensure Patient has a Primary Address, Case Manager assigned to their Program Case, Enrolled into a Free goods coverage, and the necessary consents are Active (e.g. Infusion Cost Support, HIPAA)</value>
+    </labels>
+    <labels>
+        <fullName>iCC_RDSwitchCommCopayErrMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_RDSwitchCommCopayErrMsg</shortDescription>
+        <value>You cannot switch to a Commercial Copay Enrollment from iCare. Please have the patient enroll via AssistRx/Mckesson</value>
+    </labels>
+    <labels>
+        <fullName>iCC_RD_Order_Invalid_Status</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RD Order Invalid Status</shortDescription>
+        <value>You can update the Order Status to Invoiced only if the current Status is ERP Order ID Received.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_RGA_Validation1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_RGA_Validation1</shortDescription>
+        <value>Please complete the following fields to update the Status to</value>
+    </labels>
+    <labels>
+        <fullName>iCC_RGA_Validation2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_RGA_Validation2</shortDescription>
+        <value>Please create at least one RGA Product related to this record.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_RXDose_DateOverlap_ErrorMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RX/Dose Date Overlap Error Message</shortDescription>
+        <value>This Dose record has overlapping dates with another Active Dose record. Please review and update the Start Date and End Date on respective Dose records</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Rare_Disease_Order</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Rare_Disease_Order record typeName</shortDescription>
+        <value>iCC_Rare_Disease_Order</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Realign_Account_Teams</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Realign_Account_Teams</shortDescription>
+        <value>Realign Account Teams</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Realign_Territory</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Realign_Territory</shortDescription>
+        <value>Realign Territory</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Request_Failed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Request failed</shortDescription>
+        <value>Request Failed</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Request_Sent</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Request sent successfully</shortDescription>
+        <value>Request Sent Successfully</value>
+    </labels>
+    <labels>
+        <fullName>iCC_SAREmailTemplateName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_SAREmailTemplateName</shortDescription>
+        <value>Notification_Email_for_SAR</value>
+    </labels>
+    <labels>
+        <fullName>iCC_SBC_Custom_label_For_Non_trusted_Source</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC SBC Custom label For Non trusted Source</shortDescription>
+        <value>is not a verified Source Code, Hence could not import the account.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_SCALicenseErrorMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_SCALicenseErrorMsg</shortDescription>
+        <value>The State License Number or the State License Expiration Date is invalid. Do you want to continue?</value>
+    </labels>
+    <labels>
+        <fullName>iCC_SCA_PricebookChangefrom340B</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_SCA_PricebookChangefrom340B</shortDescription>
+        <value>You cannot update the Price book from 340B/PHS to a different value.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_SHIFT_NoCustomerExists</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No customer master record exists</shortDescription>
+        <value>No customer master record exists</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Sanofi_Account_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sanofi Account Id</shortDescription>
+        <value>Sanofi</value>
+    </labels>
+    <labels>
+        <fullName>iCC_SearchForm_Gender</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_SearchForm_Gender</shortDescription>
+        <value>Gender</value>
+    </labels>
+    <labels>
+        <fullName>iCC_SearchForm_ZipCode</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_SearchForm_ZipCode</shortDescription>
+        <value>Zip Code</value>
+    </labels>
+    <labels>
+        <fullName>iCC_SearchPatient_FilterOptions</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_SearchPatient_FilterOptions</shortDescription>
+        <value>Patient;Unnamed Patient</value>
+    </labels>
+    <labels>
+        <fullName>iCC_SearchResults_Accounts</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_SearchResults_Accounts</shortDescription>
+        <value>Patient Accounts</value>
+    </labels>
+    <labels>
+        <fullName>iCC_SearchResults_Applicants</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_SearchResults_Applicants</shortDescription>
+        <value>Applicants</value>
+    </labels>
+    <labels>
+        <fullName>iCC_SearchResults_Caregivers</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_SearchResults_Caregivers</shortDescription>
+        <value>Caregivers</value>
+    </labels>
+    <labels>
+        <fullName>iCC_SearchResults_GenParticipants</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_SearchResults_GenParticipants</shortDescription>
+        <value>General Participants</value>
+    </labels>
+    <labels>
+        <fullName>iCC_SearchResults_Unnamed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_SearchResults_Unnamed</shortDescription>
+        <value>Unnamed Patients</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Select_Service</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select a Service</shortDescription>
+        <value>Please select a Service.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_SendConsentErrMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_SendConsentErrMsg</shortDescription>
+        <value>Program Case Status cannot be equal to Closed, Cancelled, or Withdrawn in order to send the Consent</value>
+    </labels>
+    <labels>
+        <fullName>iCC_SendConsentSuccessMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_SendConsentSuccessMsg</shortDescription>
+        <value>Success! Patient Consent Request has been initiated</value>
+    </labels>
+    <labels>
+        <fullName>iCC_SimulatedOrderDateErrorMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Simulated order date does not match today’s date. Please simulate the Order befo</shortDescription>
+        <value>Simulated order date does not match today’s date. Please simulate the Order before sending to ERP</value>
+    </labels>
+    <labels>
+        <fullName>iCC_SimulationSuccess</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_SimulationSuccess</shortDescription>
+        <value>Order has been successfully Simulated.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_StartDateFuture</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_StartDateFuture</shortDescription>
+        <value>Start date cannot be future date.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_StartDateNull_Val</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_StartDateNull_Val</shortDescription>
+        <value>Start Date is required when Pt Response is Granted.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_StartDate_Val</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_StartDate_Val</shortDescription>
+        <value>Start Date cannot be entered until a Patient Response is received.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_StartDate_Validation</fullName>
+        <categories>Program Coverage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_StartDate_Validation</shortDescription>
+        <value>Start Date is required in order to enroll.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_StartDate_and_ConsentType_Required</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>StartDate_and_ConsentType_Required</shortDescription>
+        <value>Please select &quot;Start Date&quot; and &quot;Consent Type&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Start_Date_Required</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC Start Date Required</shortDescription>
+        <value>Please Enter Start Date.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_TA_BatchSize</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_TA_BatchSize</shortDescription>
+        <value>50</value>
+    </labels>
+    <labels>
+        <fullName>iCC_TA_Roles</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_TA_Roles</shortDescription>
+        <value>ABM,Care Coordinator,Case Manager,CM Manager,CoRe,CoRe Manager,PAM,PAM Manager,PBM,PBM Manager,PEL,PEL Manager,Regional Business Director,Reimbursement Specialist,Sales Rep,SPL,TEM,TEM Manager,ASMD PAM,Director Patient Education Liaison</value>
+    </labels>
+    <labels>
+        <fullName>iCC_TP_AssocRole_ErrorMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC TP AssocRole ErrorMsg</shortDescription>
+        <value>An Active ‘Treating Physician&apos; already exists</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Task_Reparent_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Task_Reparent_Error</shortDescription>
+        <value>Please ensure the case selected in the &quot;Case&quot; field is associated to the Program Case selected in the &quot;Related To&quot; field.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_TemplateStaticURL</fullName>
+        <categories>eLetter</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_TemplateStaticURL</shortDescription>
+        <value>&amp;SC0=1&amp;SC1=SalesforceFile&amp;FP0=1&amp;DS7=1&amp;DefaultPDF=1&amp;APIMode=1&amp;qmode=SalesforceFile&amp;tokenserviceurl=test.salesforce.com</value>
+    </labels>
+    <labels>
+        <fullName>iCC_TemplateURL</fullName>
+        <categories>eLetter</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_TemplateURL</shortDescription>
+        <value>https://composer.congamerge.com/composer8/index.html</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Text_Consent_Reminders_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Text Consent For Reminders Error</shortDescription>
+        <value>Patient must have an Active Text Messaging Consent in order to receive SMS Reminders.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_TherapyAndProductInfo_Label_1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TherapyAndProductInfo Label 1</shortDescription>
+        <value>Prescription/Clinical Information</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Unnamed_AddInfo</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Unnamed_AddInfo</shortDescription>
+        <value>Address Information</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Unnamed_Details</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Unnamed_Details</shortDescription>
+        <value>Unnamed Patient Details</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Unnamed_Label</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Unnamed_Label</shortDescription>
+        <value>Unnamed</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Unnamed_PtInfo</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Unnamed_PtInfo</shortDescription>
+        <value>Unnamed Patient Information</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Unnamed_Record_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Unnamed_Record_Type</shortDescription>
+        <value>iCC_Unnamed_Patient</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Unnamed_ServiceCaseException</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Unnamed_ServiceCaseException</shortDescription>
+        <value>Unnamed Patient</value>
+    </labels>
+    <labels>
+        <fullName>iCC_UploadDocFileUpload</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>File Formats for uploading</shortDescription>
+        <value>.doc,.pdf,.xls,.xlsb,.docm,.xps,.xlsx,.doc,.dotx,.bmp,.gif,.jpeg,.jpg,.png,.tiff,.tif,.eml,.htm,.html,.txt,.msg,.rtf,.mp3,.docx,.mp4</value>
+    </labels>
+    <labels>
+        <fullName>iCC_UploadDocSectionName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Upload document section name</shortDescription>
+        <value>Upload Order Documents</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Upload_Document</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Upload_Document_Success</shortDescription>
+        <value>Document has been uploaded successfully!</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Upload_File_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error message for not uploading a file</shortDescription>
+        <value>Please upload a file</value>
+    </labels>
+    <labels>
+        <fullName>iCC_View_Record</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>View Record</shortDescription>
+        <value>View Record</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Weight_Kg_Required_on_Therapy</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Weight(Kg) Required on Therapy</shortDescription>
+        <value>Please select Weight(Kg).</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Withdraw</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_Withdraw</shortDescription>
+        <value>Withdraw</value>
+    </labels>
+    <labels>
+        <fullName>iCC_Withdrawal_on_Start_Date</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Withdrawal on Start Date</shortDescription>
+        <value>Withdrawal cannot occur on the same day of enrollment.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_ZipCode_ErrorMessage</fullName>
+        <categories>Pre-Enrollment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_ZipCode_ErrorMessage</shortDescription>
+        <value>The Zip Code should be 5 digits.</value>
+    </labels>
+    <labels>
+        <fullName>iCC_eLetterFlowName</fullName>
+        <categories>eLetter</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_eLetterFlowName</shortDescription>
+        <value>iCC_eLetter_Flow</value>
+    </labels>
+    <labels>
+        <fullName>iCC_eLetter_Stage1</fullName>
+        <categories>eLetter</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC eLetter Stage1</shortDescription>
+        <value>Select Templates</value>
+    </labels>
+    <labels>
+        <fullName>iCC_eLetter_Stage2</fullName>
+        <categories>eLetter</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC eLetter Stage2</shortDescription>
+        <value>Additional Documents</value>
+    </labels>
+    <labels>
+        <fullName>iCC_eLetter_Stage3</fullName>
+        <categories>eLetter</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC eLetter Stage3</shortDescription>
+        <value>Select Recipients</value>
+    </labels>
+    <labels>
+        <fullName>iCC_eLetter_Stage4</fullName>
+        <categories>eLetter</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC eLetter Stage4</shortDescription>
+        <value>Preview &amp; Send</value>
+    </labels>
+    <labels>
+        <fullName>iCC_eLetter_StageAllDone</fullName>
+        <categories>eLetter</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_eLetter_StageAllDone</shortDescription>
+        <value>AllDone</value>
+    </labels>
+    <labels>
+        <fullName>iCC_prumAccounttypeerror</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_prumAccounttypeerror</shortDescription>
+        <value>“Record with same member role and matching account record type already exists for this region -</value>
+    </labels>
+    <labels>
+        <fullName>iCC_prumDiseaseEPError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PRUM Matching Disease and EP Error</shortDescription>
+        <value>“Record with same member role, Engagement Program and matching Disease already exists for this region -</value>
+    </labels>
+    <labels>
+        <fullName>iCC_prumEngageprgerror</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_prumEngageprgerror</shortDescription>
+        <value>&quot;Record with same Engagement Program and member role already exists for this region -</value>
+    </labels>
+    <labels>
+        <fullName>iCC_prumSameUserError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PRUM Same User Error</shortDescription>
+        <value>“Record with same member and member role already exists for this region. Please update the existing PRUM record -</value>
+    </labels>
+    <labels>
+        <fullName>iCC_pspStartDateFutureErrorMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Start date must be Today or Past date</shortDescription>
+        <value>Start date must be Today or Past date</value>
+    </labels>
+    <labels>
+        <fullName>iCC_removePatientWarningMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Warning Message on remove Patient on Order Wizard</shortDescription>
+        <value>The selected Patient’s dose records will also be removed if we remove the Patient. Do you want to continue?</value>
+    </labels>
+    <labels>
+        <fullName>iCC_restrictFilesMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>iCC_restrictFilesMsg</shortDescription>
+        <value>Please upload the supported document types: tif/tiff/PDF only</value>
+    </labels>
+    <labels>
+        <fullName>iCC_setInvoiceStatusErrMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>You can create an Invoice only if the order Status is ERP Order Id Received</shortDescription>
+        <value>You can create an Invoice only if the order Status is ERP Order Id Received</value>
+    </labels>
+</CustomLabels>
