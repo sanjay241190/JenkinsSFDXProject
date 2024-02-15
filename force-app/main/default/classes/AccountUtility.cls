@@ -1,5 +1,5 @@
 public class AccountUtility {    
-//comment
+//commenterg
     public static void viewAnnualRevenue(){
         List<Account> accountsList=[SELECT name,annualrevenue from account];
         for(Account acc:accountsList ){
