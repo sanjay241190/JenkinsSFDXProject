@@ -4,14 +4,14 @@ DevOps Automation/gitDiff.js
 DevOps Automation/modified.txt
 Jenkinsfile
 force-app/main/default/assignmentRules/Case.assignmentRules-meta.xml
-force-app/main/default/classes/AccountUtility.cls
+--- force-app/main/default/classes/AccountUtility.cls
 force-app/main/default/classes/First.cls
 force-app/main/default/classes/Second.cls
 force-app/main/default/classes/Second.cls-meta.xml
 force-app/main/default/classes/Third.cls
 force-app/main/default/classes/Third.cls-meta.xml
 force-app/main/default/flexipages/Account_Record_Page1.flexipage-meta.xml
-force-app/main/default/flexipages/Data_Service.flexipage-meta.xml
+--- force-app/main/default/flexipages/Data_Service.flexipage-meta.xml
 force-app/main/default/flexipages/Opportunity_Record_Page.flexipage-meta.xml
 force-app/main/default/labels/CustomLabels.labels-meta.xml
 force-app/main/default/objects/Account/fields/AccountNumber.field-meta.xml
