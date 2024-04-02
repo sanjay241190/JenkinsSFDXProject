@@ -21,7 +21,7 @@
                 <field>ProductCode</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Read</behavior>
                 <field>SerialNumber</field>
             </layoutItems>
             <layoutItems>
