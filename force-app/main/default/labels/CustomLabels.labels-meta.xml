@@ -12,7 +12,7 @@
         <language>en_US</language>
         <protected>false</protected>
         <shortDescription>ICC_RestrictionOnWhatIdIRC</shortDescription>
-        <value>Please relate a task to a Case or a Non-Patient/General Participant Account or an Infusion Reminder.</value>
+        <value>Please relate tasks to a Case or a Non-Patient/General Participant Account or an Infusion Reminder.</value>
     </labels>
     <labels>
         <fullName>MandatoryInteractionWithField</fullName>
