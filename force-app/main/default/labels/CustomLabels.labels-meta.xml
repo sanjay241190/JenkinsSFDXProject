@@ -26,7 +26,7 @@
         <categories>My Category</categories>
         <language>en_US</language>
         <protected>true</protected>
-        <shortDescription>My Custom Label1</shortDescription>
+        <shortDescription>This is a custom Label</shortDescription>
         <value>New
 Modified</value>
     </labels>
