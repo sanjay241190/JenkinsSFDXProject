@@ -4,7 +4,7 @@
     <headers>PublicTagging</headers>
     <layoutSections>
         <customLabel>false</customLabel>
-        <detailHeading>false</detailHeading>
+        <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>Asset Information</label>
         <layoutColumns>
